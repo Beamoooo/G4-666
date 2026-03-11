@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/template.elf",
+      "device": "STM32G431RBT6",
+      "name": "Debug with OpenOCD",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "configFiles": [
+        "interface/cmsis-dap.cfg",
+        "target/stm32g4x.cfg"
+      ],
+      "searchDir": [],
+      "interface": "jtag",
+      "runToEntryPoint": "main",
+      "svdFile": "${workspaceFolder}/project/STM32G431.svd",
+      "showDevDebugOutput": "none"
+    }
+  ]
+}
